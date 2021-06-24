@@ -44,8 +44,10 @@ git remote -v
 
 git checkout ${remote_branch} || git checkout --orphan ${remote_branch}
 git add .
-git commit -m "Deploy on $(date +%s%3N)"
+git commit -m "<-- this person is currently deploy by workflow"
 git push deploy ${remote_branch} --force
 rm -rf .git
 
 popd
+
+echo "Finished"
