@@ -37,3 +37,9 @@ pushd output
 git init
 git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
+remote_branch=${GH_PAGES_BRANCH:=gh-pages}
+git remote add deploy "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+git remote -v
+
+popd
