@@ -18,9 +18,9 @@ inputs:
     description: '(optional) Default is content folder'
     required: false
     default: content
-  GIT_PASS:
-    description: '(required) Github Token'
-    required: true
+  # GIT_PASS:
+  #   description: '(required) Github Token'
+  #   required: true
 
 runs:
   using: "composite"
