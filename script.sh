@@ -44,7 +44,7 @@ git remote -v
 
 git checkout ${remote_branch} || git checkout --orphan ${remote_branch}
 git add .
-git commit -m "<-- this person is currently deploy by workflow"
+git commit -m "[Automation] deploy with workflow by ${GITHUB_ACTOR}"
 git push deploy ${remote_branch} --force
 rm -rf .git
 
