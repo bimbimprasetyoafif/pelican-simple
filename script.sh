@@ -33,6 +33,7 @@ echo "content folder: ${content_folder}"
 echo "config file: ${config_file}"
 pelican ${content_folder} -o output -s ${config_file}
 
-ls -a
 pushd output 
-ls -a
+git init
+git config user.name "${GITHUB_ACTOR}"
+git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
