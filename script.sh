@@ -32,3 +32,7 @@ echo 'Pelican build ====================================='
 echo "content folder: ${content_folder}"
 echo "config file: ${config_file}"
 pelican ${content_folder} -o output -s ${config_file}
+
+ls -a
+pushd output 
+ls -a
