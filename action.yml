@@ -1,5 +1,9 @@
 name: Pelican Simple Build
-description: Github action for build pelican SSR and push it into github pages branch.
+description: Github action for simple build pelican SSG and push it into github pages branch.
+
+branding:
+  icon: 'square'
+  color: 'green'
 
 branding:
   icon: 'square'
