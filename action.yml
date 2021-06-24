@@ -1,6 +1,10 @@
 name: Pelican Simple Build
 description: Github action for build pelican SSR and push it into github pages branch.
 
+branding:
+  icon: 'square'
+  color: 'green'
+
 inputs:
   GH_PAGES_BRANCH:
     description: '(optional) Default is gh-pages branch'
