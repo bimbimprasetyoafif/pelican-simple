@@ -1,0 +1,29 @@
+name: Pelican Simple Build
+description: Github action for build pelican SSR and push it into github pages branch.
+
+inputs:
+  GH_PAGES_BRANCH:
+    description: '(optional) Default is gh-pages branch'
+    required: false
+    default: 'gh-pages'
+  REQUIREMENTS_FILE:
+    description: '(optional) Default is requirements.txt file'
+    required: false
+    default: requirements.txt
+  CONFIG_FILE:
+    description: '(optional) Default is pelicanconf.py file'
+    required: false
+    default: pelicanconf.py
+  CONTENT_FOLDER:
+    description: '(optional) Default is content folder'
+    required: false
+    default: content
+  # GITHUB_TOKEN:
+  #   description: '(required) Github Token'
+  #   required: true
+
+runs:
+  using: "composite"
+  steps:
+    - run:  chmod +x ${{ github.action_path }}/script.sh && ${{ github.action_path }}/script.sh
+      shell: bash
