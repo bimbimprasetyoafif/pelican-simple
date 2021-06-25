@@ -9,7 +9,7 @@ This is simple way to deploy pelican on github-pages
 
   - `GH_PAGES_BRANCH` (optional) Default is `gh-pages` branch
   - `CONFIG_FILE` (optional) Default is `pelicanconf.py` file
-  - `CONTENT_FOLDER` (optional) Default is `content/` folder
+  - `CONTENT_FOLDER` (optional) Default is `content` folder
   - `REQUIREMENTS_FILE` (optional) Default is `requirements.txt` file  
 
 ## demo example
